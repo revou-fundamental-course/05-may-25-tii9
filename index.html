@@ -11,7 +11,8 @@
         <nav id="navbar">
             <div>
                 <a href="#" id="nav-title">JalanS</a>
-                <ul>
+                <button id="menu-toggle" class="hamburger">☰</button>
+                <ul id="nav-menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#packages">Our Package</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -37,40 +38,97 @@
                 <img src="./assets/slide-1.jpg" />
             </div>
 
-            <div class="mySlides fade">
+            <!-- <div class="mySlides fade">
                 <img src="./assets/slide-2.jpg" />
             </div>
 
             <div class="mySlides fade">
                 <img src="./assets/slide-3.jpg" />
-            </div>
+            </div> -->
         </div>
 
-        <div class="popular">
+        <div class="popular" id="packages">
             <h1>Popular Destinations</h1>
             <div class="card-container">
                 <div class="card">
                     <img src="./assets/populer-1.jpg" alt="popular-1" />
                     <h3>Bali - Indonesia</h3>
+                    <h5 class="card-desc">
+                        International tourists, nature & culture lovers
+                    </h5>
                     <button>Book Now</button>
                 </div>
                 <div class="card">
                     <img src="./assets/populer-2.jpg" alt="popular-2" />
                     <h3>Kyoto - Japan</h3>
+                    <h5 class="card-desc">
+                        Travelers who enjoy culture & history
+                    </h5>
                     <button>Book Now</button>
                 </div>
                 <div class="card">
                     <img src="./assets/populer-3.jpg" alt="popular-3" />
                     <h3>Paris - France</h3>
+                    <h5 class="card-desc">
+                        Travelers who enjoy culture & history
+                    </h5>
                     <button>Book Now</button>
                 </div>
                 <div class="card">
                     <img src="./assets/populer-4.jpg" alt="popular-4" />
                     <h3>Santorini - Greek</h3>
+                    <h5 class="card-desc">
+                        Couples, beach & scenic view lovers
+                    </h5>
                     <button>Book Now</button>
                 </div>
             </div>
         </div>
+
+        <div class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <div class="contact-form">
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div>
+                    <label for="destination">Your Destination:</label>
+                    <select name="destination" id="destination">
+                        <option value="bali">Bali - Indonesia</option>
+                        <option value="kyoto">Kyoto - Japan</option>
+                        <option value="paris">Paris - France</option>
+                        <option value="santorini">Santorini - Greek</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-desc">
+                    <a href="#">About</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="soc-med">
+                    <a href="#">
+                        <img src="./assets/icon-fb.svg" alt="fb" />
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icon-twitter.svg" alt="twitter" />
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icon-instagram.svg" alt="ig" />
+                    </a>
+                </div>
+            </div>
+        </footer>
 
         <script src="./js/script.js"></script>
     </body>
